@@ -114,6 +114,11 @@ define(['angular', 'require'], function(angular, require) {
     });
   }])
 
+  /* Avatar */
+  .controller('AvatarController', ['$log', '$scope', function($log, $scope) {
+
+  }])
+
   /* Header */
   .controller('PortalHeaderController', [
     '$rootScope', '$scope', '$location', 'NAMES',

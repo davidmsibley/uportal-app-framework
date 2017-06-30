@@ -25,6 +25,15 @@ define(['angular', 'require'], function(angular, require) {
     };
   })
 
+  .directive('avatar', function() {
+    return {
+      restrict: 'E',
+      templateUrl: require.toUrl('./partials/avatar.html'),
+      transclude: true,
+      controller: 'AvatarController',
+    };
+  })
+
   .directive('username', function() {
     return {
       restrict: 'E',
