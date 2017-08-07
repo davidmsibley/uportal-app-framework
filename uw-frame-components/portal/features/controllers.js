@@ -108,8 +108,8 @@ define(['angular', 'require'], function(angular, require) {
 
               var displayPopup = function() {
                 $mdDialog.show({
-                  templateUrl:
-                    require.toUrl('./partials/features-dialog-template.html'),
+                  template:
+                    require('./partials/features-dialog-template.html'),
                   parent: angular.element(document).find('div.my-uw')[0],
                   clickOutsideToClose: true,
                   openFrom: 'left',

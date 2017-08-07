@@ -1,4 +1,3 @@
 define(['require'], function(require) {
-    return {templateUrl: require.toUrl('./partials/notifications-full.html')};
+    return {template: require('./partials/notifications-full.html')};
 });
-

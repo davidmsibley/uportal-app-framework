@@ -1,11 +1,11 @@
 define(['require'], function(require) {
     return {
       'betaSettings': {
-          templateUrl: require.toUrl('./partials/settings.html'),
+          template: require('./partials/settings.html'),
           controller: 'PortalBetaSettingsController',
       },
       'userSettings': {
-          templateUrl: require.toUrl('./partials/user-settings.html'),
+          template: require('./partials/user-settings.html'),
           controller: 'PortalUserSettingsController',
       },
     };

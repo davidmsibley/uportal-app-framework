@@ -5,7 +5,7 @@ define(['angular', 'require'], function(angular, require) {
   .directive('mascotAnnouncement', function() {
     return {
       restrict: 'E',
-      templateUrl: require.toUrl('./partials/announcement.html'),
+      template: require('./partials/announcement.html'),
       controller: 'PortalPopupController',
       scope: {
         mode: '@',

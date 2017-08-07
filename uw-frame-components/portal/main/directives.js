@@ -6,7 +6,7 @@ define(['angular', 'require'], function(angular, require) {
   .directive('uwBody', function() {
     return {
       restrict: 'E',
-      templateUrl: require.toUrl('./partials/body.html'),
+      template: require('./partials/body.html'),
       controller: 'PortalMainController',
     };
   })
@@ -14,36 +14,38 @@ define(['angular', 'require'], function(angular, require) {
   .directive('portalHeader', function() {
     return {
       restrict: 'E',
-      templateUrl: require.toUrl('./partials/header.html'),
+      template: require('./partials/header.html'),
     };
   })
 
-  .directive('sideBarMenu', function() {
-    return {
-      restrict: 'E',
-      templateUrl: require.toUrl('./partials/sidebar-left.html'),
-    };
-  })
+  // TODO[Sibley] Find Me!
+  // .directive('sideBarMenu', function() {
+  //   return {
+  //     restrict: 'E',
+  //     template: require('./partials/sidebar-left.html'),
+  //   };
+  // })
 
   .directive('username', function() {
     return {
       restrict: 'E',
-      templateUrl: require.toUrl('./partials/username.html'),
+      template: require('./partials/username.html'),
     };
   })
 
   .directive('siteFooter', function() {
       return {
         restrict: 'E',
-        templateUrl: require.toUrl('./partials/footer.html'),
+        template: require('./partials/footer.html'),
       };
-    })
+    });
 
-  .directive('featuresModalTemplate', function() {
-      return {
-          restrict: 'E',
-          templateUrl:
-            require.toUrl('./partials/features-dialog-template.html'),
-      };
-  });
+  // TODO[Sibley] Find Me!
+  // .directive('featuresModalTemplate', function() {
+  //     return {
+  //         restrict: 'E',
+  //         template:
+  //           require('./partials/features-dialog-template.html'),
+  //     };
+  // });
 });

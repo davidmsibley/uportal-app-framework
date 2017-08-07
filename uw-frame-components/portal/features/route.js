@@ -1,6 +1,6 @@
 define(['require'], function(require) {
     return {
-      templateUrl: require.toUrl('./partials/features.html'),
+      template: require('./partials/features.html'),
       controller: 'PortalFeaturesController',
     };
 });

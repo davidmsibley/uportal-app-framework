@@ -6,7 +6,7 @@ define(['angular', 'require'], function(angular, require) {
     .directive('notifications', function() {
         return {
             restrict: 'E',
-            templateUrl: require.toUrl('./partials/notifications.html'),
+            template: require('./partials/notifications.html'),
         };
     })
 
@@ -17,14 +17,14 @@ define(['angular', 'require'], function(angular, require) {
               directiveMode: '@mode',
               headerCtrl: '=headerCtrl',
             },
-            templateUrl: require.toUrl('./partials/notification-bell.html'),
+            template: require('./partials/notification-bell.html'),
         };
     })
 
     .directive('notificationsListItem', function() {
       return {
         restrict: 'E',
-        templateUrl: require.toUrl('./partials/notifications-list-item.html'),
+        template: require('./partials/notifications-list-item.html'),
       };
     });
 });

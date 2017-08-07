@@ -68,7 +68,7 @@ define(['./my-app/app-config.js'], function(myAppConfig) {
   }
 
   return {
-    baseUrl: require.toUrl('.'),
+    baseUrl: require.toUrl('.'), // TODO[Sibley]
     packages: [
         'portal',
         'my-app',

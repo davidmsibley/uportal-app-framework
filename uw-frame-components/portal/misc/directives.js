@@ -16,7 +16,7 @@ define(['angular', 'require'], function(angular, require) {
     .directive('loadingGif', [function() {
       return {
         restrict: 'E',
-        templateUrl: require.toUrl('./partials/loading-gif.html'),
+        template: require('./partials/loading-gif.html'),
         link: function(scope, elm, attrs) {
           scope.isLoading = function() {
             if (angular.isUndefined(attrs.empty)) {
@@ -155,7 +155,7 @@ define(['angular', 'require'], function(angular, require) {
           optionTemplate: '@appOptionTemplate',
           isSingleOption: '@appSingleOption',
         },
-        templateUrl: require.toUrl('./partials/app-header.html'),
+        template: require('./partials/app-header.html'),
       };
     })
 
@@ -173,7 +173,7 @@ define(['angular', 'require'], function(angular, require) {
           optionTemplate: '=appOptionTemplate',
           isSingleOption: '=appSingleOption',
         },
-        templateUrl: require.toUrl('./partials/app-header.html'),
+        template: require('./partials/app-header.html'),
       };
     })
 
@@ -187,7 +187,7 @@ define(['angular', 'require'], function(angular, require) {
     .directive('framePage', function() {
       return {
           restrict: 'E',
-          templateUrl: require.toUrl('./partials/frame-page.html'),
+          template: require('./partials/frame-page.html'),
           transclude: true,
           scope: {
             appTitle: '@appTitle',
@@ -253,7 +253,7 @@ define(['angular', 'require'], function(angular, require) {
           title: '@title',
           trunclen: '@trunclen',
         },
-        templateUrl: require.toUrl('./partials/circle-button.html'),
+        template: require('./partials/circle-button.html'),
       };
     })
 
@@ -280,14 +280,14 @@ define(['angular', 'require'], function(angular, require) {
           buttonText: '@buttonText',
           ariaLabel: '@ariaLabel',
         },
-        templateUrl: require.toUrl('./partials/launch-button.html'),
+        template: require('./partials/launch-button.html'),
       };
     })
 
     .directive('addToHome', function() {
       return {
         restrict: 'E',
-        templateUrl: require.toUrl('./partials/add-to-home.html'),
+        template: require('./partials/add-to-home.html'),
       };
     });
 });

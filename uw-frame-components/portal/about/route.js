@@ -1,5 +1,5 @@
 define(['require'], function(require) {
     return {
-      templateUrl: require.toUrl('./partials/about.html'),
+      template: require('./partials/about.html'),
     };
 });

@@ -6,7 +6,7 @@ define(['angular', 'require'], function(angular, require) {
   .directive('uwSettingOption', function() {
     return {
         restrict: 'E',
-        templateUrl: require.toUrl('./partials/setting-option.html'),
+        template: require('./partials/setting-option.html'),
     };
   });
 });

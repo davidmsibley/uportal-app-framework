@@ -6,7 +6,7 @@ define(['angular', 'require'], function(angular, require) {
   .directive('search', [function() {
     return {
       restrict: 'E',
-      templateUrl: require.toUrl('./partials/search.html'),
+      template: require('./partials/search.html'),
       controller: 'PortalSearchController',
     };
   }]);
